@@ -1,0 +1,76 @@
+#TODO: 
+#Change animations for centered message. Ex: Constant flash only when waiting for input. Flash once when its a transitional phase (Draw Phase)
+
+- Socket.io Client
+    Lobby displays:
+        Rooms that are available to join.
+        Create room option. 
+
+- Socket.io Server
+    When clients connect, send list of rooms.
+    and add client to list of users in lobby. (Used to update the clients when a new room is available and to show # of clients connected)
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -- Setting Percentages to the cards in hand. Last card has 110px, calculate the percentages for the rest of the cards after
+        deducting the 110px.
+    - Get absolute position of card field and store it in a state or global variable.
+    - Use the position to transition a card to the location when selected
+    - make the card appear in the card field after it finishes its animation
+        - meaning, show cards in cardfield; just like before.
+
+
+
+When player is in counter phase, gray out/disable cards that aren't eligible.
+- if no cards are eligible then continue automatically.
+on either Counter phase, check if either playerhands are empty, if so, game is over and winner is selected. 
+- if both hands are empty, its a draw.
+
+---------------------------------------------------------------------------------------------------------
+Ideas:
+
+Maybe: Change actionCreator for spUse to do an animation before sending the update to the store/reducer.
+
+
+Phases 
+    - Use
+    - Counter
+    - Discard
+
+
+
+- Maybe Create different modes, Easy, Normal, Hard. 
+    Easy = Picks worse card, skips counters randomly. Discards at random.
+    Normal = random cards, no counter skips. Discards at random.
+    Hard = picks best card, no counter skips. Discards worst cards.

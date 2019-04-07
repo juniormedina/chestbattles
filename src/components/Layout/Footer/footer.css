@@ -1,0 +1,10 @@
+.footer {
+    background: rgb(37, 37, 37);
+    color: white;
+    text-align: left;
+}
+.footer .copyright {
+    font-size: 1rem;
+    margin-left: 8px;
+    padding-top: 4px;
+}

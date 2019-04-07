@@ -1,0 +1,114 @@
+$primary-color: #cbc3ca;
+
+.header {
+  background: #7c5a41; //7318e1
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.25);
+
+  color: $primary-color;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: [nav-row-start] 80px [nav-row-end] 0px;
+  align-items: center;
+
+  .logo-icon{
+    grid-column: 2 / 3;
+    width: fit-content;
+    justify-self: right;
+    img {
+      display: block;
+      height: 70px;
+    }
+  }
+  .logo-text{
+    grid-column: 3 / 6;
+    font-size: 2rem;
+    height: 2rem;
+  }
+  .logo-icon, .logo-text{
+    grid-row: nav-row-start / nav-row-end;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+  }
+
+  .links {
+    grid-row: nav-row-start / nav-row-end;
+    grid-column: 9 / 12;
+
+    li {
+      display: inline;
+      margin-right: 16px;
+
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: inherit;
+      }
+    }
+  }
+  .menu {
+    grid-row: nav-row-start / nav-row-end;
+    grid-column: 11 / 12;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .logo {
+      font-size: 1.6rem;
+      grid-column: 2 / 10;
+    }
+    .menu {
+      grid-column: 11 / 12;
+    }
+    // Helpers
+    .show-on-med-up {
+      visibility: hidden;
+      overflow: hidden;
+    }
+    .hide-on-med-up {
+      visibility: visible;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    // Helpers
+    .show-on-med-up {
+      visibility: hidden;
+      overflow: hidden;
+    }
+    .hide-on-med-up {
+      visibility: visible;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    // Helpers
+    .show-on-med-up {
+      visibility: visible;
+    }
+    .hide-on-med-up {
+      visibility: hidden;
+      overflow: hidden;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    // Helpers
+    .show-on-med-up {
+      visibility: visible;
+    }
+    .hide-on-med-up {
+      visibility: hidden;
+      overflow: hidden;
+    }
+  }
+
+  // /* Extra large devices (large laptops and desktops, 1200px and up) */
+  // @media only screen and (min-width: 1200px) {
+  // }
+}

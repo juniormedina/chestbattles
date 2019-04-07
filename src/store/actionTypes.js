@@ -1,0 +1,24 @@
+// Acts as an enum
+ const actionTypes = {
+    // (Single Player)
+    SP_SET: 'SP_SET',
+    SP_START: 'SP_START',
+    SP_DRAW: 'SP_DRAW',
+    SP_STANDBY: 'SP_STANDBY', //To be used in future updates
+    SP_BATTLE: 'SP_BATTLE',
+    SP_COUNTER: 'SP_COUNTER',
+    SP_CALCULATE: 'SP_CALCULATE',
+    SP_DISCARD: 'SP_DISCARD',
+    SP_END: 'SP_END',
+    SP_DRAW_OPPONENT: 'SP_DRAW_OPPONENT',
+    SP_STANDBY_OPPONENT: 'SP_STANDBY_OPPONENT',
+    SP_BATTLE_OPPONENT: 'SP_BATTLE_OPPONENT',
+    SP_COUNTER_OPPONENT: 'SP_COUNTER_OPPONENT',
+    SP_CALCULATE_OPPONENT: 'SP_CALCULATE_OPPONENT',
+    SP_DISCARD_OPPONENT: 'SP_DISCARD_OPPONENT',
+    SP_END_OPPONENT: 'SP_END_OPPONENT',
+    // (Multiplayer) To be implemented later..
+    MP_START: 'MP_START',
+}
+
+export default actionTypes;
